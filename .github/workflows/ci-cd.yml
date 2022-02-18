@@ -24,6 +24,8 @@ jobs:
           poetry-version: "1.1.11"
       - name: Git tag based version
         run: poetry version $(git describe --tags --abbrev=0)
+      - name: Install everything with poetry
+        run: poetry install
       - name: Black formatter
         run: poetry run black --check --diff .
       - name: Static type checking (mypy)
