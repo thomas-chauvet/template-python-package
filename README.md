@@ -161,6 +161,17 @@ poetry publish -r private
 
 ## CI pipeline
 
+The CI pipeline is implemented in `.github/workflows/ci-cd.yml`.
+
+It runs following steps:
+- Get version based on git tags,
+- Install poetry,
+- Run black (formatter) checks,
+- Static typing checker (mypy),
+- Unit tests,
+- Packaging (poetry build),
+- Artifacts (wheel and `tar.gz`) upload.
+
 ### Release a new version
 
 1) Merge `develop` on `main`,
