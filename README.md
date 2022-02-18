@@ -16,7 +16,7 @@ Clone this repository and follow the `README.md` to start developing your own py
   - [Version management](#version-management)
   - [Publish to (private) PyPi](#publish-to-private-pypi)
   - [CI pipeline](#ci-pipeline)
-    - [Release a new version](#release-a-new-version)
+  - [Release a new version](#release-a-new-version)
   - [Extra](#extra)
     - [VScode settings](#vscode-settings)
 
@@ -172,7 +172,7 @@ It runs following steps:
 - Packaging (poetry build),
 - Artifacts (coverage, wheel and `tar.gz`) upload.
 
-### Release a new version
+## Release a new version
 
 1) Merge `develop` on `main`,
 
@@ -210,7 +210,7 @@ git tag -a 2.0.0.dev -m "Next version v2.0.0"
 
 *Note: we do not exactly follow [PEP440](https://www.python.org/dev/peps/pep-0440/#public-version-identifiers). It allows to have a simple release process with tagged release and tagged next version.*
 
-1) Push `develop` and `tag`,
+6) Push `develop` and `tag`,
 
 ```bash
 git push origin develop --follow-tags
