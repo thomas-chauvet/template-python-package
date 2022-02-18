@@ -1,4 +1,4 @@
-name: LateX CV to PDF
+name: Continuous integration
 
 on:
   push:
