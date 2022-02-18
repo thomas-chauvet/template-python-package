@@ -22,6 +22,8 @@ jobs:
         uses: abatilo/actions-poetry@v2.0.0
         with:
           poetry-version: "1.1.11"
+      - name: Set up Git repository
+        uses: actions/checkout@v2
       - name: Git tag based version
         run: poetry version $(git describe --tags --abbrev=0)
       - name: Install everything with poetry
