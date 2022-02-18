@@ -33,7 +33,11 @@ jobs:
       - name: Static type checking (mypy)
         run: poetry run mypy .
       - name: Unit tests
-        run: poetry run pytest --cov=package tests/
+        run: poetry run pytest --cov-report html:coverage/ --cov=package tests/
+      - uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: coverage/
       - name: Build package
         run: poetry build
       - uses: actions/upload-artifact@v2

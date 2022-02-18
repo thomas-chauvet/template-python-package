@@ -170,7 +170,7 @@ It runs following steps:
 - Static typing checker (mypy),
 - Unit tests,
 - Packaging (poetry build),
-- Artifacts (wheel and `tar.gz`) upload.
+- Artifacts (coverage, wheel and `tar.gz`) upload.
 
 ### Release a new version
 
