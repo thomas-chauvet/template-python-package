@@ -163,30 +163,30 @@ poetry publish -r private
 
 ### Release a new version
 
-1) Merge `develop` on `master`,
+1) Merge `develop` on `main`,
 
 ```bash
-git checkout master
+git checkout main
 git merge develop
 ```
 
-2) Tag `master` with the version you want,
+2) Tag `main` with the version you want,
 
 ```bash
 git tag -a 1.2.3 -m "New release for v1.2.3"
 ```
 
-3) Push `master` and `tag`,
+3) Push `main` and `tag`,
 
 ```bash
-git push origin master --follow-tags
+git push origin main --follow-tags
 ```
 
-4) Rebase `master` on `develop`,
+4) Rebase `main` on `develop`,
 
 ```bash
 git checkout develop
-git rebase master
+git rebase main
 ```
 
 5) Tag `develop` with the next "dev" version.
