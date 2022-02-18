@@ -36,11 +36,9 @@ jobs:
         run: poetry run pytest --cov=package tests/
       - name: Build package
         run: poetry build
-      - uses: actions/upload-artifact@v2
+      - uses: kittaakos/upload-artifact-as-is@v1
         with:
-          name: package.whl
           path: dist/package-*.whl
-      - uses: actions/upload-artifact@v2
+      - uses: kittaakos/upload-artifact-as-is@v1
         with:
-          name: package.tar.gz
           path: dist/package-*.tar.gz
