@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "package"
-version = "1.2.3"
+version = "0"
 description = "My super template package"
 readme = "README.md"
 authors = ["Thomas Chauvet <thomas.chauvet@protonmail.com>"]
-homepage = ""
-repository = ""
+homepage = "https://github.com/thomas-chauvet/template-python-package/blob/main/README.md"
+repository = "https://github.com/thomas-chauvet/template-python-package"
 
 [tool.poetry.scripts]
 greet = "package.main:run"
